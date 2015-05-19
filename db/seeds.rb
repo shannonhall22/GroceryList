@@ -93,50 +93,50 @@ meal2 = Meal.create(user_id: user1.id,
 meal3 = Meal.create(user_id: user1.id,
                     recipe_id: recipe3.id)
 
-Recipe_Ingredient.destroy_all
-recipe_ingredient1 = Recipe_Ingredient.create(recipe_id: recipe1.id,
+RecipeIngredient.destroy_all
+recipe_ingredient1 = RecipeIngredient.create(recipe_id: recipe1.id,
                                               ingredient_id: ingredient1.id,
                                               amount: 2)
-recipe_ingredient1 = Recipe_Ingredient.create(recipe_id: recipe1.id,
+recipe_ingredient1 = RecipeIngredient.create(recipe_id: recipe1.id,
                                               ingredient_id: ingredient2.id,
                                               amount: 2)
-recipe_ingredient1 = Recipe_Ingredient.create(recipe_id: recipe1.id,
+recipe_ingredient1 = RecipeIngredient.create(recipe_id: recipe1.id,
                                               ingredient_id: ingredient3.id,
                                               amount: 2)
-recipe_ingredient1 = Recipe_Ingredient.create(recipe_id: recipe4.id,
-                                              ingredient_id: ingredient1.id,
-                                              amount: 2)
-recipe_ingredient1 = Recipe_Ingredient.create(recipe_id: recipe2.id,
-                                              ingredient_id: ingredient1.id,
-                                              amount: 2)
-recipe_ingredient1 = Recipe_Ingredient.create(recipe_id: recipe2.id,
-                                              ingredient_id: ingredient3.id,
-                                              amount: 2)
-recipe_ingredient1 = Recipe_Ingredient.create(recipe_id: recipe2.id,
+recipe_ingredient1 = RecipeIngredient.create(recipe_id: recipe1.id,
                                               ingredient_id: ingredient4.id,
                                               amount: 2)
-recipe_ingredient1 = Recipe_Ingredient.create(recipe_id: recipe2.id,
+recipe_ingredient1 = RecipeIngredient.create(recipe_id: recipe2.id,
+                                              ingredient_id: ingredient1.id,
+                                              amount: 2)
+recipe_ingredient1 = RecipeIngredient.create(recipe_id: recipe2.id,
+                                              ingredient_id: ingredient3.id,
+                                              amount: 2)
+recipe_ingredient1 = RecipeIngredient.create(recipe_id: recipe2.id,
+                                              ingredient_id: ingredient4.id,
+                                              amount: 2)
+recipe_ingredient1 = RecipeIngredient.create(recipe_id: recipe2.id,
                                               ingredient_id: ingredient5.id,
                                               amount: 2)
-recipe_ingredient1 = Recipe_Ingredient.create(recipe_id: recipe2.id,
+recipe_ingredient1 = RecipeIngredient.create(recipe_id: recipe2.id,
                                               ingredient_id: ingredient6.id,
                                               amount: 2)
-recipe_ingredient1 = Recipe_Ingredient.create(recipe_id: recipe2.id,
+recipe_ingredient1 = RecipeIngredient.create(recipe_id: recipe2.id,
                                               ingredient_id: ingredient7.id,
                                               amount: 2)
-recipe_ingredient1 = Recipe_Ingredient.create(recipe_id: recipe3.id,
+recipe_ingredient1 = RecipeIngredient.create(recipe_id: recipe3.id,
                                               ingredient_id: ingredient1.id,
                                               amount: 2)
-recipe_ingredient1 = Recipe_Ingredient.create(recipe_id: recipe3.id,
+recipe_ingredient1 = RecipeIngredient.create(recipe_id: recipe3.id,
                                               ingredient_id: ingredient4.id,
                                               amount: 2)
-recipe_ingredient1 = Recipe_Ingredient.create(recipe_id: recipe3.id,
+recipe_ingredient1 = RecipeIngredient.create(recipe_id: recipe3.id,
                                               ingredient_id: ingredient6.id,
                                               amount: 2)
-recipe_ingredient1 = Recipe_Ingredient.create(recipe_id: recipe3.id,
+recipe_ingredient1 = RecipeIngredient.create(recipe_id: recipe3.id,
                                               ingredient_id: ingredient8.id,
                                               amount: 2)
-recipe_ingredient1 = Recipe_Ingredient.create(recipe_id: recipe3.id,
+recipe_ingredient1 = RecipeIngredient.create(recipe_id: recipe3.id,
                                               ingredient_id: ingredient9.id,
                                               amount: 2)
 
