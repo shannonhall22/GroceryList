@@ -13,8 +13,8 @@ user1 = User.create(email: 'shannon@example.com',
                     password: '12341234',
                     password_confirmation: '12341234')
 
-user2 = User.create(email: 'jacob@example.com',
-                    username: 'jacob',
+user2 = User.create(email: 'allen@example.com',
+                    username: 'allen',
                     image_url: 'https://randomuser.me/api/portraits/med/men/2.jpg',
                     password: '12341234',
                     password_confirmation: '12341234')
@@ -83,19 +83,64 @@ ingredient9 = Ingredient.create(name: 'Salad Dressing',
                                 price_per_unit: '',
                                 unit: '2')
 
-
-Recipe_Ingredient.destroy_all
-recipe_ingredient1 = Recipe_Ingredient.create(recipe_id: ,
-                                              ingredient_id: ,
-                                              amount: )
-
-
 Meal.destroy_all
 meal1 = Meal.create(user_id: user2.id,
-                    recipe_id: recipe2.id)
+                    recipe_id: recipe1.id)
 
 meal2 = Meal.create(user_id: user1.id,
+                    recipe_id: recipe2.id)
+
+meal3 = Meal.create(user_id: user1.id,
                     recipe_id: recipe3.id)
+
+Recipe_Ingredient.destroy_all
+recipe_ingredient1 = Recipe_Ingredient.create(recipe_id: recipe1.id,
+                                              ingredient_id: ingredient1.id,
+                                              amount: 2)
+recipe_ingredient1 = Recipe_Ingredient.create(recipe_id: recipe1.id,
+                                              ingredient_id: ingredient2.id,
+                                              amount: 2)
+recipe_ingredient1 = Recipe_Ingredient.create(recipe_id: recipe1.id,
+                                              ingredient_id: ingredient3.id,
+                                              amount: 2)
+recipe_ingredient1 = Recipe_Ingredient.create(recipe_id: recipe4.id,
+                                              ingredient_id: ingredient1.id,
+                                              amount: 2)
+recipe_ingredient1 = Recipe_Ingredient.create(recipe_id: recipe2.id,
+                                              ingredient_id: ingredient1.id,
+                                              amount: 2)
+recipe_ingredient1 = Recipe_Ingredient.create(recipe_id: recipe2.id,
+                                              ingredient_id: ingredient3.id,
+                                              amount: 2)
+recipe_ingredient1 = Recipe_Ingredient.create(recipe_id: recipe2.id,
+                                              ingredient_id: ingredient4.id,
+                                              amount: 2)
+recipe_ingredient1 = Recipe_Ingredient.create(recipe_id: recipe2.id,
+                                              ingredient_id: ingredient5.id,
+                                              amount: 2)
+recipe_ingredient1 = Recipe_Ingredient.create(recipe_id: recipe2.id,
+                                              ingredient_id: ingredient6.id,
+                                              amount: 2)
+recipe_ingredient1 = Recipe_Ingredient.create(recipe_id: recipe2.id,
+                                              ingredient_id: ingredient7.id,
+                                              amount: 2)
+recipe_ingredient1 = Recipe_Ingredient.create(recipe_id: recipe3.id,
+                                              ingredient_id: ingredient1.id,
+                                              amount: 2)
+recipe_ingredient1 = Recipe_Ingredient.create(recipe_id: recipe3.id,
+                                              ingredient_id: ingredient4.id,
+                                              amount: 2)
+recipe_ingredient1 = Recipe_Ingredient.create(recipe_id: recipe3.id,
+                                              ingredient_id: ingredient6.id,
+                                              amount: 2)
+recipe_ingredient1 = Recipe_Ingredient.create(recipe_id: recipe3.id,
+                                              ingredient_id: ingredient8.id,
+                                              amount: 2)
+recipe_ingredient1 = Recipe_Ingredient.create(recipe_id: recipe3.id,
+                                              ingredient_id: ingredient9.id,
+                                              amount: 2)
+
+
 
 
 
