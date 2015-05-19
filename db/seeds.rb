@@ -139,9 +139,3 @@ recipe_ingredient1 = RecipeIngredient.create(recipe_id: recipe3.id,
 recipe_ingredient1 = RecipeIngredient.create(recipe_id: recipe3.id,
                                               ingredient_id: ingredient9.id,
                                               amount: 2)
-
-
-
-
-
-
