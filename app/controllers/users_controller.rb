@@ -12,10 +12,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new
-    @user.email = params[:email]
-    @user.username = params[:username]
-    @user.image_url = params[:image_url]
+    @user = User.new(user_params)
 
     if @user.save
       redirect_to users_url, :notice => "User created successfully."
@@ -30,10 +27,7 @@ class UsersController < ApplicationController
 
   def update
     @user = User.find(params[:id])
-
-    @user.email = params[:email]
-    @user.username = params[:username]
-    @user.image_url = params[:image_url]
+    @user.update_attributes(user_params)
 
     if @user.save
       redirect_to user_url(@user.id), :notice => "User updated successfully."
@@ -44,9 +38,12 @@ class UsersController < ApplicationController
 
   def destroy
     @user = User.find(params[:id])
-
     @user.destroy
 
     redirect_to users_url, :notice => "User deleted."
+  end
+
+  def user_params
+    params.require(:user).permit(:email, :username, :image_url)
   end
 end
