@@ -12,9 +12,7 @@ class MealsController < ApplicationController
   end
 
   def create
-    @meal = Meal.new
-    @meal.user_id = params[:user_id]
-    @meal.recipe_id = params[:recipe_id]
+    @meal = Meal.new(meal_params)
 
     if @meal.save
       redirect_to meals_url, :notice => "Meal created successfully."
@@ -29,9 +27,7 @@ class MealsController < ApplicationController
 
   def update
     @meal = Meal.find(params[:id])
-
-    @meal.user_id = params[:user_id]
-    @meal.recipe_id = params[:recipe_id]
+    @meal.update_attributes(meal_params)
 
     if @meal.save
       redirect_to meal_url(@meal.id), :notice => "Meal updated successfully."
@@ -46,5 +42,9 @@ class MealsController < ApplicationController
     @meal.destroy
 
     redirect_to meals_url, :notice => "Meal deleted."
+  end
+
+  def meal_params
+    params.require(:meal).permit(:user_id, :recipe_id)
   end
 end

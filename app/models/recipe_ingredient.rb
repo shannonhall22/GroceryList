@@ -1,9 +1,9 @@
 class RecipeIngredient < ActiveRecord::Base
-  def recipes
+  def recipe
     Recipe.find(self.recipe_id)
   end
 
-  def ingredients
+  def ingredient
     Ingredient.find(self.ingredient_id)
   end
 end

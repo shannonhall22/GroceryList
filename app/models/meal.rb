@@ -3,7 +3,7 @@ class Meal < ActiveRecord::Base
     User.find(self.user_id)
   end
 
-  def recipes
+  def recipe
     Recipe.find(self.recipe_id)
   end
 end
